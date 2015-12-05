@@ -79,7 +79,6 @@ Cupid = React.createClass
       return
     else
       result = compareEngine(yourName, matesName)
-      console.log(result)
       this.setState({score: result})
       this.setState({showResults: true})
       return
