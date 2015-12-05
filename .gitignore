@@ -2,10 +2,8 @@
 .DS_Store
 
 # bower
-bower_components
+bower_components/
 
-# Don't push compiled JavaScript
+assets/css/
+
 *.js
-
-# Don't push compiled css too
-*.css
