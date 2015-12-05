@@ -1,0 +1,17 @@
+{
+  "name": "cupid",
+  "description": "Love compatibility checker",
+  "main": "index.html",
+  "authors": [
+    "Udo Nkwocha"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "love"
+  ],
+  "homepage": "https://github.com/andela-unkwocha/cupid",
+  "moduleType": [],
+  "dependencies": {
+    "react": "~0.14.3"
+  }
+}

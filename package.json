@@ -1,0 +1,22 @@
+{
+  "name": "cupid",
+  "version": "1.0.0",
+  "description": "Love compatibility checker",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-unkwocha/cupid.git"
+  },
+  "keywords": [
+    "love"
+  ],
+  "author": "Udo Nkwocha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andela-unkwocha/cupid/issues"
+  },
+  "homepage": "https://github.com/andela-unkwocha/cupid#readme"
+}

@@ -1,0 +1,11 @@
+# Mac Stuff
+.DS_Store
+
+# bower
+bower_components
+
+# Don't push compiled JavaScript
+*.js
+
+# Don't push compiled css too
+*.css
