@@ -5,3 +5,8 @@ Run SASS watcher
 ```
 sass --sourcemap=none --no-cache  --watch assets/sass/base.scss:assets/css/base.css --style compressed
 ```
+
+Dependencies
+
+Coffee-react
+``` npm install -g coffee-react ```
