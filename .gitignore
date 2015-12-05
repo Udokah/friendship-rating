@@ -4,6 +4,11 @@
 # bower
 bower_components/
 
+# Node Stuff
+node_modules/
+
+# compiled CSS
 assets/css/
 
+# transpiled JS
 *.js
