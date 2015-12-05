@@ -102,12 +102,6 @@
         this.setState({
           errorMessage: "Please enter your name"
         });
-        return;
-      }
-      if (yourName.length < 1) {
-        this.setState({
-          errorMessage: "Please enter your name"
-        });
       } else if (matesName.length < 1) {
         this.setState({
           errorMessage: "Please enter your friend's name"
