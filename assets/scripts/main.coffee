@@ -85,7 +85,7 @@ Cupid = React.createClass
 
   render: ->
     <form className="Cupid" onSubmit={this.handleSubmit}>
-          <h1>Friendship Checker ¯\_(ツ)_/¯</h1>
+          <h1>Friendship Checker ¯\_(ツ)_/¯ </h1>
           <span className="error">{this.state.errorMessage}</span>
         <label htmlFor="your-name">
           <input className="input" autoComplete=false placeholder="Your name" onChange={this.handleyourNameChange} value={this.state.yourName} type="text" id="your-name" />

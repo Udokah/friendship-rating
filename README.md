@@ -8,7 +8,8 @@ sass --sourcemap=none --no-cache  --watch assets/sass/base.scss:assets/css/base.
 
 start app ```python -m SimpleHTTPServer ```
 
-compile CoffeScript to JavaScript ``` cjsx -c assets/scripts/main.coffee ```
+Run CoffeScript to JavaScript watcher
+``` cjsx -c -w assets/scripts/main.coffee ```
 
 Dependencies
 
