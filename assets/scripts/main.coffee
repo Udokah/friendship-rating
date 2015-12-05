@@ -75,7 +75,7 @@ Cupid = React.createClass
       this.setState({errorMessage: "Please enter your name"})
       return
     else if matesName.length < 1
-      this.setState({errorMessage: "Please enter your mate's name"})
+      this.setState({errorMessage: "Please enter your friend's name"})
       return
     else
       result = compareEngine(yourName, matesName)
@@ -85,15 +85,16 @@ Cupid = React.createClass
 
   render: ->
     <form className="Cupid" onSubmit={this.handleSubmit}>
+          <h1>Friendship Checker ¯\_(ツ)_/¯</h1>
           <span className="error">{this.state.errorMessage}</span>
         <label htmlFor="your-name">
-          <input placeholder="Your name" onChange={this.handleyourNameChange} value={this.state.yourName} type="text" id="your-name" />
+          <input className="input" autoComplete=false placeholder="Your name" onChange={this.handleyourNameChange} value={this.state.yourName} type="text" id="your-name" />
         </label>
-        <span> and </span>
+        <span className="and"> and </span>
         <label htmlFor="mates-name">
-          <input placeholder="Your mate's name" onChange={this.handleMatesNameChange} value={this.state.matesName} type="text" id="mates-name" />
+          <input className="input" autoComplete=false placeholder="Your friends's name" onChange={this.handleMatesNameChange} value={this.state.matesName} type="text" id="mates-name" />
         </label>
-        <button type="submit">check</button>
+        <button className="button" type="submit">check</button>
         { <Results score={this.state.score} /> if this.state.showResults }
     </form>
 
