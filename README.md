@@ -1,4 +1,4 @@
-# Cupid
+# Friendship Rating
 This app rates how compatible you are with your friend :)
 
 [Check your friendship rating here at your own risk](http://andela-unkwocha.github.io/friendship-rating/)
