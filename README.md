@@ -1,5 +1,5 @@
 # Cupid
-This app checks if you and your spouse are compatible
+This app rates how compatible you are with your friend :)
 
 Run SASS watcher
 ```
