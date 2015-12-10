@@ -13,7 +13,6 @@
   "license": "MIT",
   "dependencies": {
     "react": "~0.14.3",
-    "babel": "*",
-    "jquery": "~2.1.4"
+    "babel": "*"
   }
 }
