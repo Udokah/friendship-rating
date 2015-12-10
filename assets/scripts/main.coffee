@@ -42,7 +42,7 @@ Results = React.createClass
     			div className: "percentage",
     				div className: "numbers",
     					span null, "-"
-    					for x in [1...100] by 1
+    					for x in [0...100] by 1
     						span null, x+"%"
 
 
