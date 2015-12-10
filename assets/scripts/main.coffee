@@ -18,14 +18,17 @@ compareEngine = (yourName, matesName) ->
 
 
 Results = React.createClass
+  getInitialState: ->
+    return {progress: 0}
   render: ->
+    $this = this
     score = this.props.score
     window.randomize = ->
-      $(".radial-progress").attr("data-progress", score)
+      $this.setState({progress: score})
       return
     setTimeout(window.randomize, 200)
     <div className="results">
-        <div className="radial-progress" data-progress="0">
+        <div className="radial-progress" data-progress={this.state.progress}>
         <div className="circle">
           <div className="mask full">
             <div className="fill"></div>
