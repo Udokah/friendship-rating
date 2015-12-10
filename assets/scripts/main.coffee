@@ -47,6 +47,7 @@ Results = React.createClass
         </div>
       </div>
 
+{div, h1, form, span, label, input, button} = React.DOM
 
 Cupid = React.createClass
   getInitialState: ->
@@ -82,18 +83,31 @@ Cupid = React.createClass
       return
 
   render: ->
-    <form className="Cupid" onSubmit={this.handleSubmit}>
-          <h1>Friendship Rating ¯\_(ツ)_/¯ </h1>
-          <span className="error">{this.state.errorMessage}</span>
-        <label htmlFor="your-name">
-          <input className="input" autoComplete=false placeholder="Your name" onChange={this.handleyourNameChange} value={this.state.yourName} type="text" id="your-name" />
-        </label>
-        <span className="and"> and </span>
-        <label htmlFor="mates-name">
-          <input className="input" autoComplete=false placeholder="Your friends's name" onChange={this.handleMatesNameChange} value={this.state.matesName} type="text" id="mates-name" />
-        </label>
-        <button className="button" type="submit">check</button>
-        { <Results score={this.state.score} /> if this.state.showResults }
-    </form>
+  	form className:"Cupid", onSubmit: @handleSubmit,
+  		h1 null, "Friendship Rating ¯\\_(ツ)_/¯"
+  		span className:"error", @state.errorMessage
+  		label htmlFor: "your-name",
+  			input
+  				type: "text"
+  				className:"input"
+  				id:"your-name"
+  				autoComplete:false
+  				placeholder:"Your name"
+  				onChange:@handleyourNameChange
+  				state: @state.yourName
+  		span className: "and", "and"
+  		label htmlFor: "mates-name",
+  			input
+  				type: "text"
+  				className:"input"
+  				id:"mates-name"
+  				autoComplete:false
+  				placeholder:"Your friends's name"
+  				onChange:@handleMatesNameChange
+  				value: @state.matesName
+  		button className:"button", type:"submit", "check"
+  		resultComponent = React.createFactory(Results)
+  		if @state.showResults
+            resultComponent {score: @state.score}
 
 ReactDOM.render(<Cupid />, document.getElementById("container"))
