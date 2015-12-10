@@ -35,12 +35,11 @@
       };
     },
     render: function() {
-      var $this, score, x;
+      var $this, x;
       $this = this;
-      score = this.props.score;
       window.animateProgress = function() {
         $this.setState({
-          progress: score
+          progress: $this.props.score
         });
       };
       setTimeout(window.animateProgress, 200);

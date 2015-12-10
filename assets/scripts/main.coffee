@@ -24,9 +24,8 @@ Results = React.createClass
     return {progress: 0}
   render: ->
     $this = this
-    score = this.props.score
     window.animateProgress = ->
-      $this.setState({progress: score})
+      $this.setState({progress: $this.props.score})
       return
     setTimeout(window.animateProgress, 200)
     div className:"results",
