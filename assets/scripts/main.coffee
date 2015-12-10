@@ -5,15 +5,13 @@ compareEngine = (yourName, matesName) ->
   friend = matesName.split("").sort()
   intersect = []
   if you.length > friend.length
-    you.forEach (letter) ->
+    for letter in you
       if friend.indexOf(letter) != -1
         intersect.push letter
-        return
   else
-    friend.forEach (letter) ->
+    for letter in friend
       if you.indexOf(letter) != -1
         intersect.push letter
-        return
 
   score = ( intersect.length / (+you.length + friend.length) ) * 100
   return Math.ceil(100 - score - (+you.length + friend.length) )
