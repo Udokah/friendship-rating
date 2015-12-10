@@ -106,4 +106,5 @@ Cupid = React.createClass
   		if @state.showResults
             resultComponent {score: @state.score}
 
-ReactDOM.render(<Cupid />, document.getElementById("container"))
+cupidElement = React.createElement(Cupid, null)
+ReactDOM.render(cupidElement , document.getElementById("container"))
