@@ -43,7 +43,7 @@ Results = React.createClass
     				div className: "numbers",
     					span null, "-"
     					for x in [0...100] by 1
-    						span null, x+"%"
+    						span key: x, x+"%"
 
 
 Cupid = React.createClass
