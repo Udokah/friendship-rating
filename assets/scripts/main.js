@@ -35,14 +35,14 @@
       };
     },
     render: function() {
-      var $this, x;
+      var $this, animateProgress, x;
       $this = this;
-      window.animateProgress = function() {
+      animateProgress = function() {
         $this.setState({
           progress: $this.props.score
         });
       };
-      setTimeout(window.animateProgress, 200);
+      setTimeout(animateProgress, 200);
       return div({
         className: "results"
       }, div({
